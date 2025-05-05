@@ -12,3 +12,7 @@ Route::get('/', function () {
 Route::fallback(function () {
     return Inertia::render('Page404');
 });
+
+Route::get('/test', function () {
+    return 'Laravel fonctionne ! 🎉';
+});
